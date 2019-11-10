@@ -1,0 +1,29 @@
+@import "_variables.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+}
+
+.top {
+  display: inline-block;
+  background-color: rgb(28, 28, 189);
+  width: 80vw;
+  overflow: hidden;
+  margin-right: 30px;
+}
