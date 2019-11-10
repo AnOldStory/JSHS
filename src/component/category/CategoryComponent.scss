@@ -1,1 +1,6 @@
 @import "_variables.scss";
+
+.category {
+  position: fixed;
+  z-index: 9999;
+}

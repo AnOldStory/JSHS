@@ -4,3 +4,14 @@
   width: 100vw;
   height: 80vh;
 }
+
+#map_container {
+  opacity: 100;
+}
+
+.location {
+  z-index: 99999;
+  position: fixed;
+  right: 150px;
+  width: 100px;
+}

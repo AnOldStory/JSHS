@@ -21,9 +21,15 @@ code {
 }
 
 .top {
+  height: 90px;
   display: inline-block;
   background-color: rgb(28, 28, 189);
-  width: 80vw;
+  width: 100vw;
   overflow: hidden;
-  margin-right: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  background: white;
+  z-index: 1000;
 }

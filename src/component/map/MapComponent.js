@@ -131,6 +131,8 @@ class MapComponent extends Component {
           X: position.coords.latitude,
           Y: position.coords.longitude
         });
+        // X: 37.295758,
+        // Y: 126.841147;
         this.setState({
           msg: "성공"
         });
@@ -145,9 +147,10 @@ class MapComponent extends Component {
   render() {
     return (
       <div id="map_container">
-        <button onClick={this.GpsHandler}> Get Location </button>
-        DEBUG:{this.state.msg}
-        <button onClick={this.ButtonMan}>hello</button>
+        <div className="btn location" onClick={this.GpsHandler}>
+          본인의 위치 불러오기
+        </div>
+        {/* <button onClick={this.ButtonMan}>hello</button> */}
         <div id="map" />
       </div>
     );

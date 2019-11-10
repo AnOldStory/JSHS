@@ -34,8 +34,8 @@ class CategoryComponent extends Component {
   render() {
     return (
       <div className="category">
-        <div onClick={this.handleCategory}>
-          llasdfasllasdfasllasdfasllasdfasllasdfasllasdfasllasdfasllasdfasllasdfasllasdfasllll
+        <div className="btn" onClick={this.handleCategory}>
+          주변 음식점 검색
         </div>
         <div />
       </div>

@@ -9,7 +9,7 @@ class SearchComponent extends Component {
     this.state = {
       isFocus: false,
       inputText: "",
-      resultList: [{ title: "test", X: 37.3005, Y: 126.839 }]
+      resultList: []
     };
 
     this.inputHandler = this.inputHandler.bind(this);
@@ -73,17 +73,19 @@ class SearchComponent extends Component {
           onChange={this.inputHandler}
           onClick={this.focusHandler}
         />
-        <div className="dropdown">
-          {this.state.isFocus
-            ? this.state.resultList.map((result, i) => {
-                return (
-                  <div onClick={() => this.selectHandler(i)} key={i}>
-                    {result.title}
-                  </div>
-                );
-              })
-            : ""}
-        </div>
+        {this.state.isFocus
+          ? this.state.resultList.map((result, i) => {
+              return (
+                <div
+                  className="dropdown"
+                  onClick={() => this.selectHandler(i)}
+                  key={i}
+                >
+                  {result.title}
+                </div>
+              );
+            })
+          : ""}
       </div>
     );
   }
